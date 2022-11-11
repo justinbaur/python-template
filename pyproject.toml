@@ -3,11 +3,11 @@ name = "python_template"
 version = "1.0.0"
 description = "An opinionated project template for Python built with poetry/tox"
 license = "GPL-3.0"
-authors = ["Justin Baur <justin.baur@outlook.com>"]
+authors = ["Justin Baur <justinbaur@outlook.com>"]
 readme = "README.md"
 repository = "https://github.com/justinbaur/python-template"
 packages = [
-    {include = "src/python_template"}
+    {include = "python_template", from = "src"}
 ]
 
 [build-system]
@@ -48,25 +48,28 @@ show_error_codes = true
 [tool.pytest.ini_options]
 log_cli = true
 log_cli_level = "DEBUG"
-adopts = "-vv"
+addopts = "-vv"
+pythonpath = ["src"]
+testpaths = ["test"]
+
 
 [tool.coverage.run]
 branch = true
-include = [ "src/python-template/*" ]
+include = [ "src/python_template/*" ]
 omit = [ "**/domain/**", "**/__init__.py" ]
 
 [tool.coverage.report]
 show_missing = true
 fail_under = 70
-include = [ "src/python-template/*" ]
+include = [ "src/python_template/*" ]
 omit = [ "**/domain/**", "**/__init__.py" ]
 
 [tool.yapf]
 allow_split_before_dict_value = false
 based_on_style = "pep8"
 blank_lines_around_top_level_definition = "2"
-blank_lines_around_top_level_imports_and_variables = "1"
-blank_lines_before_nested_class_or_def = true
+blank_lines_between_top_level_imports_and_variables = "1"
+blank_line_before_nested_class_or_def = true
 coalesce_brackets = true
 column_limit = "150"
 dedent_closing_brackets = true
