@@ -24,20 +24,19 @@ To get started with this template, changes will need to be made to the module na
 - The `src/python_template` folder name
 - `src/python_template/__init__.py` name variable
 
-The `poetry.lock` file will need to be deleted so it can be regenerated with the new module's values
+The `poetry.lock` file will need to be deleted so it can be regenerated with the new module's values.
 
 ### Project Setup
 
 The template comes provided with a `venv.sh` file for helping in the setup of a Python virtual environment.  The script will perform the following actions:
 
 - Install the required developer tooling
-- Create the virtual environment using `venv`
+- Create the virtual environment
 - Activate the virtual environment
-- Upgrade pip
 - Install the project dependencies
 - Display outdated dependencies
 
-This is purely for convienence. It can be ran again with the virtual environment created to perform an update and activate it.
+This is purely for convienence. It can be ran again with the virtual environment created to perform an update and activate.
 
 ## Reference Configuration
 
@@ -67,7 +66,7 @@ Project configuration options and flag referenced by the following locations.
 
 <https://github.com/google/yapf#knobs>
 
-## flake8
+### flake8
 
 <https://flake8.pycqa.org/en/latest/user/configuration.html>
 
