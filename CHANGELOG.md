@@ -10,6 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - GitHub Actions
 
+## [1.1.0] - 2023-10-06
+
+### Changed
+
+- Dependency updates [@justinbaur](https://github.com/justinbaur).
+- Remove unused dependencies [@justinbaur](https://github.com/justinbaur).
+
 ## [1.0.0] - 2022-11-09
 
 ### Added
