@@ -27,10 +27,6 @@ else
         exit 2
     fi
 
-    echo "Python being used at $(which python)"
-    echo "Upgrading pip"
-    python -m pip install --upgrade pip
-
     echo "Installing project dependencies..."
     poetry install
     echo "Listing all outdated dependencies regardless of constraint level"
