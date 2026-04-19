@@ -6,10 +6,9 @@ An opinionated project template for Python built with poetry/tox
 
 This is a template repository. It comes with support for the following:
 
-- Unit testing via [pytest](https://docs.pytest.org/en/7.1.x/index.html)
-- Code coverage via [coverage](https://coverage.readthedocs.io/en/6.5.0/index.html)
-- Linting via [flake8](https://flake8.pycqa.org/en/latest/)
-- Formatting via [yapf](https://github.com/google/yapf) and [isort](https://pycqa.github.io/isort/)
+- Unit testing via [pytest](https://docs.pytest.org/en/stable/)
+- Code coverage via [coverage](https://coverage.readthedocs.io/en/stable/)
+- Linting and formatting via [ruff](https://docs.astral.sh/ruff/)
 - Static type checking via [mypy](https://mypy.readthedocs.io/en/stable/index.html)
 - Orchestration of the above quality gates via [tox](https://tox.wiki/en/latest/index.html)
 - Dependency and module management via [poetry](https://python-poetry.org/)
@@ -38,17 +37,19 @@ The template comes provided with a `venv.sh` file for helping in the setup of a 
 
 This is purely for convienence. It can be ran again with the virtual environment created to perform an update and activate.
 
+> Note: `venv.sh` installs poetry via `pip`. The modern official recommendation is `pipx install poetry`, which isolates Poetry in its own environment. See the [Poetry installation docs](https://python-poetry.org/docs/#installation).
+
 ## Reference Configuration
 
-Project configuration options and flag referenced by the following locations.
+Project configuration options and flags referenced by the following locations.
 
 ### pytest
 
-<https://docs.pytest.org/en/7.1.x/reference/reference.html#ini-options-ref>
+<https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref>
 
 ### coverage
 
-<https://coverage.readthedocs.io/en/6.5.0/config.html>
+<https://coverage.readthedocs.io/en/stable/config.html>
 
 ### tox
 
@@ -58,17 +59,9 @@ Project configuration options and flag referenced by the following locations.
 
 <https://mypy.readthedocs.io/en/stable/config_file.html>
 
-### isort
+### ruff
 
-<https://pycqa.github.io/isort/docs/configuration/config_files.html>
-
-### yapf
-
-<https://github.com/google/yapf#knobs>
-
-### flake8
-
-<https://flake8.pycqa.org/en/latest/user/configuration.html>
+<https://docs.astral.sh/ruff/configuration/>
 
 ### poetry
 
